@@ -78,12 +78,24 @@ button:active {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: url('https://images.pexels.com/photos/1529040/pexels-photo-1529040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')
-    no-repeat center center/cover;
   padding: 1rem;
   height: 500px;
   width: 450px;
   border-radius: 10px;
+  color: #fff;
+}
+
+.clock.day {
+  background: url('https://images.pexels.com/photos/1529040/pexels-photo-1529040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')
+    no-repeat center center/cover;
+}
+
+.clock.night {
+  background: url('https://images.pexels.com/photos/39378/sunset-channel-water-evening-39378.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')
+    no-repeat center center/cover;
+}
+
+.clock.night h2 {
   color: #fff;
 }
 

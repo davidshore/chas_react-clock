@@ -1,9 +1,6 @@
 import { useEffect, useState } from 'react';
 
-function Clock({ pause, city, timeZone }) {
-  const [time, setTime] = useState(
-    new Date().toLocaleTimeString('eu-SE', { timeZone: timeZone })
-  );
+function Clock({ time, setTime, pause, city, timeZone }) {
   const [intervalId, setIntervalId] = useState('');
 
   useEffect(() => {
