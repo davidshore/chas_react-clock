@@ -1,1 +1,16 @@
 /* Your css for App.jsx */
+body {
+  display: flex;
+  justify-content: center;
+}
+.clocks {
+  background-color: rgba(173, 143, 150, 0.056);
+  font-size: 2em;
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-direction: row;
+  width: 50vw;
+  border: 10px rgba(128, 128, 128, 0.116) ridge;
+}
