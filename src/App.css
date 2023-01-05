@@ -1,1 +1,13 @@
 /* Your css for App.jsx */
+body {
+  background-color: rgb(79, 70, 70);
+}
+
+.Clock {
+  background-color: rgb(187, 148, 148);
+  border: 3px solid black;
+  margin-bottom: 15px;
+  font-size: x-large;
+  padding: 15px;
+  margin-left: 20px;
+}
