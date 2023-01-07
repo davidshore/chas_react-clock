@@ -1,1 +1,50 @@
 /* Your css for App.jsx */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.app{
+    min-height: 100vh;
+}
+.app .clock{
+    background-color: greenyellow;
+    background-image: linear-gradient(180deg,greenyellow 0%, red 30% , yellow 80%, black 100%);
+    min-width: 600px;
+    text-align: center;
+    margin-top: 20px;
+}
+.clock h2{
+    background-color: rgb(2, 85, 57);
+    padding: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+}
+.clock button{
+    border: none;
+    cursor: pointer;
+   margin: 10px;
+   font-weight: bold;
+   transition: all 0.3s;
+   color: black;
+   background-color: rgb(0, 196, 235);
+}
+.clock button:hover{
+    background-color: rgb(53, 1, 143);
+    color: aliceblue;
+}
+.clock button:focus{
+    outline: none;
+}
+.timeShow{
+    background-color: aliceblue;
+    color: black;
+    margin:0px;
+}
+.timeShow h1{
+    padding: 10px;
+    margin: 0;
+}
+
