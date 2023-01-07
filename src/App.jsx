@@ -4,12 +4,12 @@ function App() {
   return (
         <div className="app"> 
             <div className="clockLeft">
-              <Clock      timeZoneProp = "Europe/Stockholm" />
-              <Clock     timeZoneProp = "America/New_York" />
+              <Clock     timeZoneProp = {"Europe/Stockholm"}   city={ "Stockholm"} />
+              <Clock     timeZoneProp = {"America/New_York"}  city={ "New York"}  />
             </div>
             <div className="clockRight">
-                <Clock      timeZoneProp= "Europe/Paris" />
-                <Clock       timeZoneProp = "Europe/London" />
+                <Clock     timeZoneProp= { "Asia/Tokyo" }  city={ "Tokyo"}  />
+                <Clock     timeZoneProp = {"Europe/London"}  city={ "London"} />
             </div>
         </div>
   );
