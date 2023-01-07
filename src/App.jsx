@@ -3,10 +3,14 @@ import Clock from "./Clock.jsx";
 function App() {
   return (
         <div className="app"> 
-            <Clock      timeZoneProp = "Europe/Stockholm" />
-            <Clock     timeZoneProp = "America/New_York" />
-            <Clock      timeZoneProp= "Europe/Paris" />
-            <Clock       timeZoneProp = "Europe/London" />
+            <div className="clockLeft">
+              <Clock      timeZoneProp = "Europe/Stockholm" />
+              <Clock     timeZoneProp = "America/New_York" />
+            </div>
+            <div className="clockRight">
+                <Clock      timeZoneProp= "Europe/Paris" />
+                <Clock       timeZoneProp = "Europe/London" />
+            </div>
         </div>
   );
 }
