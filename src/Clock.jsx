@@ -6,7 +6,7 @@ function Clock({regionCode, timeZone, city}) {
     useEffect(() => {
         setInterval(() => {
             let newTime = new Date().toLocaleTimeString({regionCode}, 
-            {timeZone, timestyle:'long',hourCycle:'h24'})
+            {timeZone, timestyle:"long",hourCycle:"h24"})
             setTime(newTime)
         }, 1000);}, [])    
 
