@@ -1,16 +1,17 @@
 import React, {useState, useEffect} from "react";
 
-function Clock({timeZone, city}) {
+function Clock({regionCode, timeZone, city}) {
     const [time, setTime] = useState()
 
     useEffect(() => {
         setInterval(() => {
-            let newTime = new Date().toLocaleTimeString("ja-JP", 
-            {timeZone: "Asia/Tokyo", timestyle:'long',hourCycle:'h24'})
+            let newTime = new Date().toLocaleTimeString({regionCode}, 
+            {timeZone, timestyle:'long',hourCycle:'h24'})
             setTime(newTime)
         }, 1000);}, [])    
 
     return (
+        
         <div style={styles.container}>
         <span style={styles.city}>
         {city}
@@ -22,6 +23,7 @@ function Clock({timeZone, city}) {
         {timeZone}
         </span>        
         </div>
+        
     )
 }
 
@@ -31,18 +33,22 @@ const styles = {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
+        
     },
     time: {
-        fontSize: 120,
+        fontSize: 80,
         fontWeight: 700,
-        marginTop: 90,
-        marginBottom: 90
+        marginTop: 60,
+        marginBottom: 30
     },
     city: {
-        fontSize: 50,
+        fontSize: 40,
+        fontWeight: 600
     },
     timeZone: {
-        fontSize: 25
+        fontSize: 15,
+        fontWeight: 600,
+        marginBottom: 50
     }
 }
 
