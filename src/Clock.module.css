@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+.title {
+  font-size: 30px;
+  font-family: "roboto mono";
+}
+
+.container {
+  border: 2px solid white;
+}
+
+.time {
+  margin-top: 1rem;
+  font-size: 20px;
+  font-family: "roboto mono", monospace;
+}
+
+
