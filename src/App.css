@@ -1,1 +1,15 @@
-/* Your css for App.jsx */
+.Container {
+  display: flex;
+  background: rgb(240, 226, 205);
+  font-size: 2.5em;
+  font-weight: bold;
+  width: 95vw;
+  height: 95vw;
+  text-align: center;
+  align-items: center;
+  border: 2px solid black;
+  width: 480px;
+  height: 70px;
+  margin: 40vh 400px 200px 400px;
+  border-radius: 15px;
+}
